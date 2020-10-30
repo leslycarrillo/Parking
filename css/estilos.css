@@ -179,28 +179,26 @@ text-align: center;
     font-size: 23px;
     color: rgb(182, 178, 177);
   padding: 50px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/*Contactanos*/
-.contactos h6{
-    color:rgb(208, 134, 218);
+/*reservas*/
+.reservas h6 {
+ color:rgb(208, 134, 218);
     font-size: 30px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+}
 
-}
-*{
-	box-sizing:border-box;
-	margin:0;padding:0;
-}
+
 form{
 	width:400px;
 	padding:32px;
 	border:1px solid #000;
 	border-radius:10px;
 	margin:32px auto;
-	background-color:#e59ef3;
+	background-color:#b2ccff;
 }
 input[type="text"],select,textarea{
 	display:block;
@@ -217,12 +215,11 @@ label{
 	margin:8px 0;
 }
 
-.marketing label,.rgpd{display:inline-block;font-weight:normal;}
-.rgpd{width:90%;}
-mark{float:right;}
+
+
 
 footer{
-    background: rgb(87, 81, 81);
+    background: rgb(63, 62, 62);
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;    

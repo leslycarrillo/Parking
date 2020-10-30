@@ -14,7 +14,9 @@
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Elige tu Parqueo</a>
+            <a href="#">Sucursales</a>
             <a href="#">Sobre Nosotros</a>
+            <a href="#">Reservas</a>
             <a href="#">Contactos</a>
 
         </nav>
@@ -76,22 +78,51 @@
                 </div>
             </div>
   </section>
-  <div class="contactos">
-  <h6>Contactos</h6>
-</div>
-  <form action="#" name="#">
+
+  <section class="reservas">
+   <h6>Has tu Reserva Ya ¡¡¡</h6>
+  
+  <form action="#" name="FormularioReserva">
 	<label for="nombre">Nombre:</label>
 	<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="30">
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" placeholder="correo@empresa.com" required maxlength="30">
-    <label for="email">Telefono:</label>
-	<input type="text" id="phone" name="phone" placeholder="Escribe tu numero de telefono" required maxlength="30">
-</select>
-<label for="mensaje">En que podemos ayudarte?</label>
-	<textarea name="mensaje" id="mensaje" maxlength="300"></textarea>
-<mark>@Parking</mark>
-</form>
 
+	<label for="email">CI/NIT:</label>
+	<input type="number" id="ci/nit" name="ci/nit" placeholder="Escribe tu CI/NIT" required maxlength="30">
+
+
+	<label for="Elige tu parqueo">¿Elige tu parqueo?</label>
+	<div class="Elige tu parqueo">		
+		<input type="checkbox" value="estandar" id="estandar"><label for="estandar">Parqueo Estandar</label>
+		<input type="checkbox" value="pequeño" id="pequeño"><label for="pequeño">Parqueo Pequeño</label>
+        </div>
+        <label for="Sucursales">¿Sucursales?</label>
+	<div class="Sucursales">		
+		<input type="checkbox" value="calacoto" id="calacoto"><label for="calacoto">Calacoto</label>
+        <input type="checkbox" value="el alto" id="el alto"><label for="el alto">El Alto</label>
+        <input type="checkbox" value="prado" id="prado"><label for="prado">Prado</label>
+        </div>
+
+        <label for="telefono">Telefono:</label>
+	<input type="number" id="telefono" name="telefono" placeholder="Escribe tu Telefono" required maxlength="30">
+<p>Llene los siguentes datos:</p>
+
+<p>Dia de Reservacion:
+    <input type="radio" name="dia" value="dia" required> lunes
+    <input type="radio" name="dia" value="dia"  required> martes
+    <input type="radio" name="dia" value="dia" required> miercoles
+    <input type="radio" name="dia" value="dia" required> jueves
+    <input type="radio" name="dia" value="dia" required> Viernes
+    <input type="radio" name="dia" value="dia" required> Sabado 
+    <input type="radio" name="dia" value="dia" required> Domingo
+</p>
+</p>
+    <label for="hora">Hora:</label>
+	<input type="datetime-local" id="hora" name="hora" placeholder="" required maxlength="30">
+<input type="submit" value="Aceptar">
+        
+      </section>
+   </form>
+ 
 
 <footer>
 <div class="contenedor-footer">
@@ -112,6 +143,7 @@
         </li>
     </div>
 </div>
+
 <h2 class="titulo-final">&copy; LeslyCT | Parking</h2>
  </footer>
 </body>
