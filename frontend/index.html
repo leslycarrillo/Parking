@@ -32,7 +32,16 @@
             <h2 class ="texto-principal">Te damos la bienvenida a nuestra plataforma Parking ,diseñada exclusivamente ante las necesidades de los clientes 
                 Nuestro sistema consta con la facilidad que nos brinda la tecnologia de poder buscar un estacionamiento,hacer una reserva y asi brindar a nuestros clientes la eficiencia y eficacia con la cual trabajamos.
             </h2>
-            <img src="imagenes/fila.png"alt=""class="image-about-usss">
+            <img src="imagenes/fila.png" alt="" >
+			<br />
+			<br />
+			<br />
+			<h2>Autos</h2>
+			<button id="btnautos"> Ver autos </button>
+			<div id="resultados"></div>
+			
+			
+			
             <div class="contenedor-sobre-nosotross">
                 <img src="imagenes/triunfo-seguros-sucursales.jpg"alt=""class="image-about-us">
                 <div class="contenido-texto-tituloo">
@@ -148,6 +157,31 @@
 
 <h2 class="titulo-final">&copy; LeslyCT | Parking</h2>
  </footer>
+ <script>
+  function init(){
+	var resultados = document.getElementById("resultados"); 
+	fetch("http://localhost/leslie/Parking/backend/Usuario.php")
+		.then(function(resp){
+			return resp.json();		
+		})
+		.then(function(data){
+			console.log(data);	
+			var ht = '';
+			for(var dt of data){
+				ht += "<h4>Marca: "+dt.marca +" Año: "+dt.anio+""+"</h4>";
+			}
+			
+			resultados.innerHTML = ht;
+			
+		})
+ }
+ 
+ window.onload = function() {
+ document.getElementById("btnautos").addEventListener("click",function(){init()})
+	//init();
+ };
+
+ </script>
 </body>
 </html>
 
