@@ -234,5 +234,5 @@ status: 401
 Este proyecto se encuentra en el servidor de versiones de GITHUB , el cual
 puede ser visualizado mediante la siguiente dirección:
 
-https://github.com/leslycarrillo/Parking , así mismo, el proyecto se trabajo bajo la
+<'https://github.com/leslycarrillo/Parking.git'>, así mismo, el proyecto se trabajo bajo la
 rama Master.
