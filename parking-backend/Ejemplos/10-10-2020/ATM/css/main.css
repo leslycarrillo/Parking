@@ -1,0 +1,58 @@
+body {
+    margin: 0%;
+    height: 100%;
+    background-position: center;
+    background-image: url(./../img/fondo.jpg);
+    background-repeat-y: repeat;
+    background-repeat-x: no-repeat;
+    background-size: cover;
+}
+#pantalla {
+    width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: darkgrey 0px 0px 15px 1px;
+    padding: 10px;
+}
+#teclado {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+button {
+    width: 22%;
+    height: 40px;
+    margin: 2px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.fns {
+    width: 80%;
+    border-radius: 100%;
+}
+td {
+    vertical-align: bottom;
+}
+.screen{
+    width: 100%;
+    height: 100%;
+}
+#screenLenguaje {
+    
+}
+#screenPin {
+    text-align: center;
+    margin-top: 0px;
+}
+.mostrar {
+    display: inline;
+}
+.ocultar {
+    display: none;
+}
